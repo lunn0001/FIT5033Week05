@@ -44,10 +44,10 @@
                     <!-- Submit button -->
                     <button class="btn btn-primary " name="submit" type="submit">Submit</button>
                 </div>
-                
+
             </div>
 
-        
+
         </form>
 
 
@@ -76,12 +76,17 @@
                 orientation: "bottom auto",
                 autoclose: true,
                 defaultViewDate: { year: 2020, month: 08, day: 20 }
-                
+
             });
-            $('.input-group.date').datepicker('setDate', new Date('2020-08-20')); 
+            $('.input-group.date').datepicker('setDate', new Date('2020-08-20'));
         })
 
     </script>
-    <!-- 'input[name = "date"]' -->
+    <script src="~/Scripts/notify.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $.notify("Testing on notify JS", "success");
+        });
+    </script>
 </body>
 </html>
